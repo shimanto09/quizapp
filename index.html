@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Awesome Quiz App || mrn</title>
+  </head>
+  <body>
+    <div class="myQuizApp">
+      <div class="img">
+        <img src="image/question.svg" alt="quiz image" />
+      </div>
+      <div class="text">
+        <h3>Quiz App description</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui quo
+          unde, accusamus ea quidem minima fugiat inventore nobis aliquam
+          voluptate quae fugit impedit, aspernatur doloremque reiciendis
+          blanditiis, quaerat maiores ullam!
+        </p>
+      </div>
+      <div class="startBtn">
+        <button>Start Quiz</button>
+      </div>
+    </div>
+
+    <!-- Second page Start============ -->
+
+    <div class="rulesBox">
+      <div class="rulesTitle">Some Rules of this Quiz</div>
+      <div class="rulesList">
+        <ol>
+          <li>
+            You will have only
+            <span style="color: rgb(0, 128, 255)">15 seconds</span> per each
+            question.
+          </li>
+          <li>Once you select your answer, it can't be undone.</li>
+          <li>You can't select any option once time goes off.</li>
+          <li>You can't exit from thr Quiz while you are playing.</li>
+          <li>You will get points on the basis of your correct answer.</li>
+        </ol>
+      </div>
+      <div class="midBtn">
+        <button id="ext">Exit Quiz</button>
+        <button id="continue">Continue</button>
+      </div>
+    </div>
+
+    <!-- Third Page Start=================================== -->
+
+    <div class="question">
+      <header class="questionHeader">
+        <div class="title">Start Quiz</div>
+        <div class="timeCount">
+          <div class="timeLeft">Time Left</div>
+          <div class="second">15</div>
+        </div>
+        <div class="timeLines"></div>
+      </header>
+
+      <div class="qnaBody">
+        <h3 id="span"></h3>
+        <div class="qnaOption">
+          <!-- options -->
+        </div>
+      </div>
+      <footer>
+        <div class="totalQna"></div>
+        <button class="nextBtn">Next Que</button>
+      </footer>
+    </div>
+
+    <div class="resultBox">
+      <div class="img">
+        <img src="./image/winner.svg" alt="winner Image" />
+      </div>
+      <div class="resultText">You have Finished the Quiz</div>
+      <div class="scoreText">
+        <!-- score text dynamic -->
+      </div>
+      <div class="resultBtn">
+        <button class="quit">Quit Quiz</button>
+      </div>
+    </div>
+
+    <!-- js link================ -->
+    <script src="./js/script.js"></script>
+    <script src="./js/quiz.js"></script>
+  </body>
+</html>

@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Serif', serif;
+}
+
+body {
+    background-color: rgb(239, 239, 240);
+}
+
+/* First page  */
+
+.myQuizApp,
+.rulesBox,
+.question,
+.resultBox {
+    width: 340px;
+    height: 580px;
+    background-color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    transform: translate(-50%, -50%);
+    border-radius: 48px;
+}
+
+.img img {
+    width: 100%;
+}
+
+.text,
+.resultText {
+    width: 85%;
+    margin: 5px auto;
+    text-align: justify;
+
+}
+
+.startBtn button {
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #c2fbd7;
+    box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset, rgba(44, 187, 99, .15) 0 1px 2px, rgba(44, 187, 99, .15) 0 2px 4px, rgba(44, 187, 99, .15) 0 4px 8px, rgba(44, 187, 99, .15) 0 8px 16px, rgba(44, 187, 99, .15) 0 16px 32px;
+    color: green;
+    border: none;
+    outline: none;
+    padding: 7px 25px;
+    cursor: pointer;
+    border-radius: 57px 0px 51px 0px;
+    transition: 0.2s ease-in-out;
+    position: absolute;
+    left: 54%;
+    top: 92%;
+}
+
+.startBtn button:hover {
+    box-shadow: rgba(44, 187, 99, .35) 0 -25px 18px -14px inset, rgba(44, 187, 99, .25) 0 1px 2px, rgba(44, 187, 99, .25) 0 2px 4px, rgba(44, 187, 99, .25) 0 4px 8px, rgba(44, 187, 99, .25) 0 8px 16px, rgba(44, 187, 99, .25) 0 16px 32px;
+}
+
+
+/* Second page ================================================================== */
+
+.rulesTitle {
+    margin: 1rem 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    border-bottom: 1px solid lightblue;
+    padding: 4px;
+}
+
+.rulesList {
+    width: 80%;
+    margin: auto;
+    text-align: justify;
+    padding: 5px;
+}
+
+.rulesList ol li {
+    font-size: 17px;
+    line-height: 2.5rem;
+    /* padding:10px 25px; */
+}
+
+.midBtn button:last-child {
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #c2fbd7;
+    box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset, rgba(44, 187, 99, .15) 0 1px 2px, rgba(44, 187, 99, .15) 0 2px 4px, rgba(44, 187, 99, .15) 0 4px 8px, rgba(44, 187, 99, .15) 0 8px 16px, rgba(44, 187, 99, .15) 0 16px 32px;
+    color: green;
+    border: none;
+    outline: none;
+    padding: 7px 25px;
+    cursor: pointer;
+    border-radius: 57px 0px 51px 0px;
+    transition: 0.2s ease-in-out;
+    position: absolute;
+    left: 58%;
+    top: 93%;
+}
+
+.midBtn button:first-child {
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #c2fbd7;
+    box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset, rgba(44, 187, 99, .15) 0 1px 2px, rgba(44, 187, 99, .15) 0 2px 4px, rgba(44, 187, 99, .15) 0 4px 8px, rgba(44, 187, 99, .15) 0 8px 16px, rgba(44, 187, 99, .15) 0 16px 32px;
+    color: green;
+    border: none;
+    outline: none;
+    padding: 7px 25px;
+    cursor: pointer;
+    border-radius: 0px 57px 0px 51px;
+    transition: 0.2s ease-in-out;
+    position: absolute;
+    top: 93%;
+    left: 2%;
+}
+
+.midBtn button:hover {
+    box-shadow: rgba(44, 187, 99, .35) 0 -25px 18px -14px inset, rgba(44, 187, 99, .25) 0 1px 2px, rgba(44, 187, 99, .25) 0 2px 4px, rgba(44, 187, 99, .25) 0 4px 8px, rgba(44, 187, 99, .25) 0 8px 16px, rgba(44, 187, 99, .25) 0 16px 32px;
+}
+
+
+
+/* Third Page========================================================= */
+
+.questionHeader .title {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.questionHeader {
+    display: flex;
+    padding: 20px 15px;
+    justify-content: space-between;
+    height: 70px;
+    position: relative;
+    z-index: 2;
+    align-items: center;
+}
+
+.timeCount {
+    display: flex;
+    justify-content: space-between;
+    width: 130px;
+    color: #004085;
+    background-color: #aadbfc;
+    border: 1px solid #5b98d8;
+    border-radius: 5px;
+    padding: 3px;
+    margin-right: 9px;
+}
+
+.second {
+    background-color: rgb(43, 43, 43);
+    color: #fff;
+    border-radius: 3px;
+    padding: 3px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    user-select: none;
+}
+
+
+
+.qnaBody {
+    padding: 25px 30px 20px 30px;
+}
+
+.qnaBody h3 {
+    font-size: 25px;
+}
+
+.qnaOption {
+    padding: 25px 0;
+    display: block;
+}
+
+.option {
+    background: aliceblue;
+    border: 1px solid #5b98d8;
+    border-radius: 5px;
+    padding: 15px 15px;
+    font-size: 16px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.option:hover {
+    background: rgb(154, 194, 230);
+    border: 1px solid #74bff1;
+}
+
+footer {
+    height: 60px;
+    display: flex;
+    border-top: 1px solid lightblue;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.totalQna {
+    padding-bottom: 10px;
+    padding-left: 25px;
+}
+
+.nextBtn {
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #c2fbd7;
+    box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset, rgba(44, 187, 99, .15) 0 1px 2px, rgba(44, 187, 99, .15) 0 2px 4px, rgba(44, 187, 99, .15) 0 4px 8px, rgba(44, 187, 99, .15) 0 8px 16px, rgba(44, 187, 99, .15) 0 16px 32px;
+    color: green;
+    border: none;
+    outline: none;
+    padding: 7px 25px;
+    cursor: pointer;
+    border-radius: 57px 0px 51px 0px;
+    transition: 0.2s ease-in-out;
+    position: absolute;
+    left: 57%;
+    top: 93%;
+    display: none;
+}
+
+.nextBtn:hover {
+    box-shadow: rgba(44, 187, 99, .35) 0 -25px 18px -14px inset, rgba(44, 187, 99, .25) 0 1px 2px, rgba(44, 187, 99, .25) 0 2px 4px, rgba(44, 187, 99, .25) 0 4px 8px, rgba(44, 187, 99, .25) 0 8px 16px, rgba(44, 187, 99, .25) 0 16px 32px;
+}
+
+
+/* winner page======================================================== */
+
+
+.scoreText {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.scoreText p {
+    display: inline-block;
+    margin: 30px 0;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.resultBtn button {
+    background-color: #c2fbd7;
+    border-radius: 100px;
+    box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset, rgba(44, 187, 99, .15) 0 1px 2px, rgba(44, 187, 99, .15) 0 2px 4px, rgba(44, 187, 99, .15) 0 4px 8px, rgba(44, 187, 99, .15) 0 8px 16px, rgba(44, 187, 99, .15) 0 16px 32px;
+    color: green;
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    cursor: pointer;
+}
+
+.resultBtn button:hover {
+    box-shadow: rgba(44, 187, 99, .35) 0 -25px 18px -14px inset, rgba(44, 187, 99, .25) 0 1px 2px, rgba(44, 187, 99, .25) 0 2px 4px, rgba(44, 187, 99, .25) 0 4px 8px, rgba(44, 187, 99, .25) 0 8px 16px, rgba(44, 187, 99, .25) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+}
+
+.resultBtn {
+    text-align: center;
+
+}
+
+
+
+
+
+
+
+/* =================js work start======================= */
+
+.rulesBox {
+    display: none;
+}
+
+.rulesBox.blockRule {
+    display: block;
+}
+
+.question {
+    display: none;
+}
+
+.question.qnaBlock {
+    display: block;
+}
+
+.option.correctAns {
+    background: #55efc4;
+    border: 1px solid #00b894;
+}
+
+.option.wrongAns {
+    background: #f68585;
+    border: 1px solid #f32424;
+}
+
+.option.disable {
+    pointer-events: none;
+}
+
+.question header .timeLines {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    background-color: #00855f;
+}
+
+
+.resultBox {
+    display: none;
+}
+
+.resultBox.blockResult {
+    display: block;
+}
